@@ -76,6 +76,12 @@
                             <constraint firstItem="JLH-YU-AOh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pos-hP-uQC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="kh9-bI-dsS" id="X1h-XX-iyn"/>
+                        <outlet property="firstCardImageView" destination="sTt-MS-eaf" id="Mof-R6-wtW"/>
+                        <outlet property="playButton" destination="0nY-Au-0Nk" id="zgu-Wt-1LY"/>
+                        <outlet property="secondCardImageView" destination="sSX-sq-ReX" id="1ZL-An-aBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstCardImageView: UIImageView!
+    
+    @IBOutlet weak var secondCardImageView: UIImageView!
+    
+    @IBOutlet weak var playButton: UIButton!
+    
+    @IBOutlet var backgroundImageView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        self.playButton.setTitle("Go", forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
