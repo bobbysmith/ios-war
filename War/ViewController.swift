@@ -28,7 +28,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+// @IBAction keyword days that this method is connected to an event on the storyboard
+    @IBAction func playRoundTapped(sender: UIButton) {
+        self.playButton.setTitle("Go", forState: UIControlState.Normal)
+        println("clicked")
+    }
 
 }
 
