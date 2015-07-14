@@ -22,8 +22,9 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YsI-40-MNf" userLabel="BackgroundImage">
                                         <rect key="frame" x="-150" y="-215" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.2392156869" green="0.45490196350000001" blue="0.0078431377190000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sTt-MS-eaf" userLabel="FirstCard">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="sTt-MS-eaf" userLabel="FirstCard">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="170"/>
                                         <color key="backgroundColor" red="0.80000001192092896" green="0.58039218187332153" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -31,7 +32,7 @@
                                             <constraint firstAttribute="width" constant="140" id="bSw-A5-Xa7"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sSX-sq-ReX" userLabel="SecondCard">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="sSX-sq-ReX" userLabel="SecondCard">
                                         <rect key="frame" x="160" y="0.0" width="140" height="170"/>
                                         <color key="backgroundColor" red="0.80000001192092896" green="0.58039218187332153" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -53,9 +54,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLH-YU-AOh" userLabel="PlayButtonContainer">
                                 <rect key="frame" x="16" y="385" width="568" height="215"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nY-Au-0Nk" userLabel="PlayRound">
-                                        <rect key="frame" x="269" y="93" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nY-Au-0Nk" userLabel="PlayRound">
+                                        <rect key="frame" x="206" y="23" width="155" height="170"/>
                                         <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.0" green="0.0078431377187371254" blue="0.0078431377187371254" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -69,7 +71,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.23921568691730499" green="0.45490196347236633" blue="0.0078431377187371254" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Vcm-Tx-5Mg" secondAttribute="centerX" id="CvJ-MH-uVF"/>
                             <constraint firstItem="JLH-YU-AOh" firstAttribute="top" secondItem="Vcm-Tx-5Mg" secondAttribute="bottom" id="LrO-YI-GQ1"/>
@@ -91,4 +93,7 @@
             <point key="canvasLocation" x="432" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="120" height="170"/>
+    </resources>
 </document>

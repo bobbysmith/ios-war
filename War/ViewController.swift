@@ -30,8 +30,16 @@ class ViewController: UIViewController {
     
 // @IBAction keyword days that this method is connected to an event on the storyboard
     @IBAction func playRoundTapped(sender: UIButton) {
-        self.playButton.setTitle("Go", forState: UIControlState.Normal)
-        println("clicked")
+//        self.playButton.setTitle("Go", forState: UIControlState.Normal)
+//        println("clicked")
+        var randomNumberOne = arc4random_uniform(13) + 1
+        var randomNumberTwo = arc4random_uniform(13) + 1
+        
+        var cardOne = String(format: "card%i", randomNumberOne)
+        var cardTwo = String(format: "card%i", randomNumberTwo)
+        
+        self.firstCardImageView.image = UIImage(named: cardOne)
+        self.secondCardImageView.image = UIImage(named: cardTwo)
     }
 
 }
