@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4756923E-EADF-4E7B-B812-B2F3F9D9CD03</string>
 	<key>IDESourceControlProjectName</key>
-	<string>War</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DE4AE1482AA4A31BACF082E0723DB49FDD8309BB</key>
 		<string>github.com:bobbysmith/ios-war.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>War.xcodeproj</string>
+	<string>War.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DE4AE1482AA4A31BACF082E0723DB49FDD8309BB</key>

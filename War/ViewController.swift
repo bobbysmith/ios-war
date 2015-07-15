@@ -15,9 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardImageView: UIImageView!
     
     @IBOutlet weak var playButton: UIButton!
-    
+  
+    @IBOutlet weak var playerScore: UILabel!
+    @IBOutlet weak var enemyScore: UILabel!
+  
     @IBOutlet var backgroundImageView: UIView!
-    
+    var cardArray: [String] = ["card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9",
+    "card10", "jack", "queen", "king", "ace"]
+  
+    var playerScoreTotal: Int = 0
+    var enemyScoreTotal: Int = 0
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,16 +38,32 @@ class ViewController: UIViewController {
     
 // @IBAction keyword days that this method is connected to an event on the storyboard
     @IBAction func playRoundTapped(sender: UIButton) {
-//        self.playButton.setTitle("Go", forState: UIControlState.Normal)
-//        println("clicked")
-        var randomNumberOne = arc4random_uniform(13) + 1
-        var randomNumberTwo = arc4random_uniform(13) + 1
+/*        self.playButton.setTitle("Go", forState: UIControlState.Normal)
+        println("clicked")
+*/
+         // generates random numbers for cards
+        var randomNumberOne:Int = Int(arc4random_uniform(13))
+        var randomNumberTwo:Int = Int(arc4random_uniform(13))
         
-        var cardOne = String(format: "card%i", randomNumberOne)
-        var cardTwo = String(format: "card%i", randomNumberTwo)
+        // accesses the card from the card array
+        var cardOne: String = self.cardArray[randomNumberOne]
+        var cardTwo: String = self.cardArray[randomNumberTwo]
         
+        // updates UIImage with card asset made from previous vars
         self.firstCardImageView.image = UIImage(named: cardOne)
         self.secondCardImageView.image = UIImage(named: cardTwo)
+
+      
+ 
+        if randomNumberOne > randomNumberTwo{
+          playerScoreTotal += 1
+          self.playerScore.text = String(playerScoreTotal)
+        } else if randomNumberOne == randomNumberTwo {
+
+        } else {
+          enemyScoreTotal += 1
+          self.enemyScore.text = String(enemyScoreTotal)
+        }
     }
 
 }
